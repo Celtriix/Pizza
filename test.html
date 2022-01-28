@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="Order.js"></script>
+	</head>
+	<body>
+		<script>
+			var organizer = new PizzaOrganizer();
+			organizer.addOrder(new Order("Test1", true, false, false, false, false, false, true));
+			organizer.addOrder(new Order("Test2", true, false, true, false, false, false, true));
+			console.log("Similarity: ", organizer.getSimilarities());
+		</script>
+	</body>
+</html>
